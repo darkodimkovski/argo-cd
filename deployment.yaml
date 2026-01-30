@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: darkologija
+  labels:
+    app: darkologija
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: darkologija
+    template:
+      metadata:
+        labels:
+          app: darkologija
+          owner: darko
+          env: dev
+      spec:
+        containers:
+        - name: node-app
+          image: darkovski/node-app:latest
+          ports:
+          - containerPort: 8080

@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: darkologija-app-on-argocd
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/darkodimkovski/argo-cd.git
+    targetRevision: HEAD
+    path: . 
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: darkologija
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+  
