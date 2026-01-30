@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: darkologija
-    template:
+  template:
       metadata:
         labels:
           app: darkologija
