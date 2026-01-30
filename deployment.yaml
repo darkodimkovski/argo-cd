@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: node-app
-          image: darkovski/node-app:latest
+          image: darkovski/node-app:1.0
           ports:
             - containerPort: 8080
