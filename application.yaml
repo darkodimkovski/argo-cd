@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: darkologija-app-on-argocd
+  name: node-app-on-argocd
   namespace: argocd
 spec:
   project: default

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: darkologija
+  name: node-app-deployment
   labels:
-    app: darkologija
+    app: node-app-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: darkologija
+      app: node-app
   template:
     metadata:
       labels:
-        app: darkologija
+        app: node-app
         owner: darko
         env: dev
     spec:

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: darkologija-svc
+  name: node-app-svc
 spec:
   type: ClusterIP
   selector:
-    owner: darko
+    app: node-app
   ports:
     - protocol: TCP
       port: 8080
