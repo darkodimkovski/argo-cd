@@ -17,5 +17,5 @@ sources:
 annotations: {}
 dependencies: 
   - name: mongodb
-    version: 11.11.x
+    version: x.x.x
     repository: "https://charts.bitnami.com/bitnami"
