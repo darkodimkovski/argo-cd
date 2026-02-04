@@ -1,0 +1,9 @@
+environment: dev
+owner:
+service:
+  type: LoadBalancer
+  port: 8080
+argocd:
+  project: default
+  server:
+  namespace: darkologija

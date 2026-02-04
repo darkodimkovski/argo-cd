@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{.Values.environment}}-{{.Release.Name}}-deployment
+  labels:
+    app: {{.Values.environment}}-{{.Release.Name}}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: {{.Values.environment}}-{{.Release.Name}}
+  template:
+    metadata:
+      labels:
+        app: {{.Values.environment}}-{{.Release.Name}}
+        owner: {{.Values.owner | default "unknown" }}
+        env: {{.Values.environment}}
+    spec:
+      containers:
+        - name: node-app
+          image: darkovski/node-app:1.0
+          ports:
+            - containerPort: 8080
