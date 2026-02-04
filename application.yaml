@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/darkodimkovski/argo-cd.git
     targetRevision: HEAD
-    path: /node-app
+    path: node-app
   destination:
     server: https://kubernetes.default.svc
     namespace: darkologija
