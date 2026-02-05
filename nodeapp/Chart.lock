@@ -2,5 +2,8 @@ dependencies:
 - name: mongodb
   repository: https://charts.bitnami.com/bitnami
   version: 18.4.4
-digest: sha256:370754bc5b591a1ad02cba2763195a6c76f53271c3946dfca9aceadd4e9d2640
-generated: "2026-02-04T16:46:23.9649994+01:00"
+- name: nodeapp2
+  repository: oci://ddiakstest.azurecr.io/helm
+  version: 0.1.0
+digest: sha256:e9985ec4bb80f365086494c87f290ddcaf34e194d010dd45210038e800a54772
+generated: "2026-02-05T13:23:25.0909929+01:00"
