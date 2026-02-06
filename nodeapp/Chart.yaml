@@ -15,3 +15,7 @@ keywords:
 sources:
   - https://github.com/your-org/nodeapp
 annotations: {}
+dependencies:
+  - name: redis
+    version: 14.8.8
+    repository: https://charts.bitnami.com/bitnami
