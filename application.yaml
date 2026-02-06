@@ -4,14 +4,14 @@ metadata:
   name: app1
   namespace: argocd
 spec:
-  project: default
+  project: test
   source:
     repoURL: https://github.com/darkodimkovski/argo-cd.git
     targetRevision: HEAD
     path: nodeapp
   destination:
     server: https://kubernetes.default.svc
-    namespace: app1
+    namespace: testing
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
