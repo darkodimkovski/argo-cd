@@ -15,7 +15,3 @@ keywords:
 sources:
   - https://github.com/your-org/nodeapp
 annotations: {}
-dependencies: 
-  - name: mongodb
-    version: x.x.x
-    repository: "https://charts.bitnami.com/bitnami"
