@@ -16,6 +16,6 @@ sources:
   - https://github.com/your-org/nodeapp
 annotations: {}
 dependencies:
-  - name: redis
-    version: 14.8.8
+  - name: mongodb
+    version: 18.4.4
     repository: https://charts.bitnami.com/bitnami
