@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
     name: ingress
 spec:
+    ingressClassName: nginx
     rules:
     - host: guestbook.initgroup.mk
       http:
@@ -11,6 +12,6 @@ spec:
           pathType: Prefix
           backend:
             service:
-              name: {{.Values.environment}}-{{.Release.Name}}-svc
+              name: svc
               port:
                 number: 8080
