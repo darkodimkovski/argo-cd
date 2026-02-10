@@ -1,6 +1,6 @@
 environment: dev
 owner:
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 8080
 replicas: 1
