@@ -6,7 +6,7 @@ spec:
     ingressClassName: nginx
     rules:
     - host: guestbook.initgroup.mk
-      https:
+      http:
         paths:
         - path: /
           pathType: Prefix
