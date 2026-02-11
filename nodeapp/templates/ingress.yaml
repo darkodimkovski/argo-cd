@@ -8,8 +8,6 @@ spec:
     - host: guestbook.initgroup.mk
       http:
         paths:
-        - path: /
-            pathType: Prefix
         - backend:
             serviceName: {{.Values.environment}}-{{.Release.Name}}-svc
             servicePort: 8080
