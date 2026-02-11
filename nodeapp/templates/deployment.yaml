@@ -17,7 +17,7 @@ spec:
         env: {{.Values.environment}}
     spec:
       containers:
-        - name: node-app
+        - name: hello-world
           image: hello-world
           ports:
             - containerPort: 80

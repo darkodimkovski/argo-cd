@@ -2,5 +2,5 @@ environment: dev
 owner:
 service:
   type: ClusterIP
-  port: 8080
-replicas: 1
+  port: 80
+replicas: 2
