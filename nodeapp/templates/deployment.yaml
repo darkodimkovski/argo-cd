@@ -20,4 +20,4 @@ spec:
         - name: node-app
           image: hello-world
           ports:
-            - containerPort: 8080
+            - containerPort: 80
