@@ -11,7 +11,5 @@ spec:
         - path: /
           pathType: Prefix
           backend:
-            service:
-              name: {{.Values.environment}}-{{.Release.Name}}-svc
-              port:
-                number: 8080
+            serviceName: {{.Values.environment}}-{{.Release.Name}}-svc
+            servicePort: 8080
