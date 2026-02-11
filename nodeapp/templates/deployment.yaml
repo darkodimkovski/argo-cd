@@ -17,7 +17,7 @@ spec:
         env: {{.Values.environment}}
     spec:
       containers:
-        - name: todo
-          image: prologic/todo
+        - name: k8s
+          image: nigelpoulton/getting-started-k8s:1.0
           ports:
-            - containerPort: 8000
+            - containerPort: 8080
