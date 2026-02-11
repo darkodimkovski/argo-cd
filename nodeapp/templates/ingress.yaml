@@ -5,11 +5,12 @@ metadata:
 spec:
     ingressClassName: nginx
     rules:
-    - host: guestbook.initgroup.mk
-      http:
+    - http:
         paths:
-        - pathType: Prefix
-          path: /
+        - path: /
+          pathType: Prefix
           backend:
-            serviceName: {{.Values.environment}}-{{.Release.Name}}-svc
-            servicePort: 8080
+            service:
+              name: {{.Values.environment}}-{{.Release.Name}}-svc
+              port:
+                number: 8080
